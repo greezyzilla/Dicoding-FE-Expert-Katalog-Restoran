@@ -4,7 +4,7 @@
       "id": "6c7bqjgi84kcowlqdz",
       "name": "Bring Your Phone Cafe",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/41",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/41",
       "city": "Medan",
       "rating": 4.6
     },
@@ -12,7 +12,7 @@
       "id": "ljx8i0qu2uckcowlqdz",
       "name": "Run The Gun",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/07",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/07",
       "city": "Bali",
       "rating": 4.6
     },
@@ -20,7 +20,7 @@
       "id": "fe8bbxoazddkcowlqdz",
       "name": "Pangsit Express",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/29",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/29",
       "city": "Ternate",
       "rating": 4.8
     },
@@ -28,7 +28,7 @@
       "id": "ik1zljmlf68kcowlqdz",
       "name": "Ducky Duck",
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/38",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/38",
       "city": "Malang",
       "rating": 4.7
     },
@@ -36,7 +36,7 @@
       "id": "9jpuzkm6n6jkcowlqdz",
       "name": "Kafein",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/40",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/40",
       "city": "Bali",
       "rating": 3.8
     },
@@ -44,7 +44,7 @@
       "id": "cpl5jpsnuqkkcowlqdz",
       "name": "Makan mudah",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/08",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/08",
       "city": "Malang",
       "rating": 4.6
     },
@@ -52,7 +52,7 @@
       "id": "iqtf9hmdzvbkcowlqdz",
       "name": "Saya Suka",
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/32",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/32",
       "city": "Surabaya",
       "rating": 3.6
     },
@@ -60,7 +60,7 @@
       "id": "8i06gqcc2dpkcowlqdz",
       "name": "Gigitan Cepat",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/45",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/45",
       "city": "Aceh",
       "rating": 4
     },
@@ -68,9 +68,81 @@
       "id": "wf5o19xhxxkcowlqdz",
       "name": "Fairy Cafe",
       "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
-      "pictureId": "https://dicoding-restaurant-api.el.r.appspot.com/images/medium/04",
+      "pictureId": "https://restaurant-api.dicoding.dev/images/medium/04",
       "city": "Malang",
       "rating": 3.9
+    },
+    {
+      "id": "R2IHryc12XRdqTvCkW2",
+      "name": "Tempo Gelato",
+      "description": "Tempo Gelato ialah gerai es krim paling diburu di Kota Gudeg. Saat ini Tempo Gelato berada di 3 lokasi yang berbeda, yaitu Taman Siswa, Prawirotaman, dan di Jalan Kaliurang. Di tempat ini terdapat banyak varian es krim mulai dari buah-buahan, rempah-rempah bahkan sorbet. Tempo Gelato yang berada di Kota Pelajar ini pertama kali berdiri pada 2015 di Jalan Prawirotaman, Yogyakarta. Seiring berjalannya waktu, mereka meluaskan cabang dengan membuka dua tempat lainnya di Taman Siswa dan di Jalan Kaliurang. Gelato yang dijual di kedai lain biasanya menawarkan rasa-rasa pada umumnya seperti coklat, stroberi, vanila atau green tea. Namun, di Tempo Gelato Yogyakarta Anda dapat menemukan banyak varian rasa berbeda yang unik dan kekinian. Tak tanggung-tanggung, jumlahnya mencapai 50 varian rasa loh guys! Misalnya saja rasa buah-buahan seperti leci, melon, mangga, stroberi dan rasa buah lainnya. Ataupun rasa rempah yakni jahe, kemangi bahkan terdapat rasa coklat pedas. Selain dua jenis itu, Tempo Gelato juga menyediakan rasa unik nan kekinian misalnya Mint, Oreo dan Kit-Kat. Berbagai paket harga disediakan di Tempo Gelato ini, yakni mulai Rp25 ribu saja maka Anda sudah dapat dua rasa gelato dengan cup small. Namun, jika Anda belum cukup puas jika hanya dua rasa, Anda dapat membeli dengan cup medium yang dapat memilih hingga tiga rasa, atau cup big yang dapat memilih empat rasa dan juga cup X-Big dengan lima rasa. Bangunan di Tempo Gelato ini sangat unik karena bernuansa perpaduan Jawa dan Italia. Sebagian orang di sini tak hanya menikmati gelato saja, namun juga tak ingin melewatkan untuk berfoto ria. Bahkan, artis Bryan Domani pun ikut berpose ria ketika berkunjung ke tempat ini. ",
+      "pictureId": "https://i.ibb.co/nmPMvM8/2021-02-01.jpg",
+      "city": "Yogyakarta",
+      "rating": 4.7
+    },
+    {
+      "id": "snvGiXCTWOAvMWuSk9D",
+      "name": "Saboten",
+      "description": " Saboten Shokudo merupakan lokasi kuliner yang menyajikan aneka varian masakan Jepang sebagai sajian utamanya. Saboten Shokudo menghadirkan masakan Jepang yang halal dengan harga terjangkau, serta telah diadaptasikan sesuai dengan cita rasa lokal atau fusion. Saboten berasal dari bahasa Jepang yang bermakna pohon kaktus dan shokudo bermakna restoran. Memiliki makna filosofis, Saboten Shokudo diharapkan menjadi restoran yang kuat dan mampu survive di berbagai keadaan. Saat ini Saboten Shokudo telah memiliki 4 outlet. Banyak varian masakan Jepang yang dihadirkan mulai dari donburi, katsu, sukiyaki, hingga yakiniku. Beberapa menu yang paling populer dan banyak dipesan oleh pengunjung, antara lain Yakiniku, Sukiyaki, Chicken Katsu BBQ, dan Chicken Ramen Spicy.",
+      "pictureId": "https://i.ibb.co/HxSBmLH/2017-02-11.jpg",
+      "city": "Malang",
+      "rating": 4.4
+    },
+    {
+      "id": "3ZFuHYr0J3yUaBcluzn",
+      "name": "Barn Event Hire",
+      "description": "Barn Event Hire Surabaya sejatinya adalah berupa ruang terbuka dengan konsep rustic untuk menggelar event pernikahan maupun prewedding. Merupakan bagian dari Rustic Market yang memiliki beragam fasilitas seperti Coffee Shop, Unique Store, tenda venue, aula dan lain sebagainya. Secara keseluruhan total luasnya mencapai 4.500 meter persegi. Nah untuk ulasan ini, kami membatasi hanya pada cafe atau coffee shopnya saja. Penasaran seperti apa tempatnya dan apa saja menu yang ditawarkan? Simak info selengkapnya dibawah Selain kota kami, rasanya cafe barn event hire ini juga tak boleh kelewatan kalau datang ke Surabaya. Sebuah cafe yang lagi hype dengan konsep rustic. Luas cafenya sendiri memang gak terlalu besar, berada di bagian belakng dari Barn Event hire. Jadi di bagian depan, kamu bakal menjumpai area untuk wedding dan juga prewedding, kamu tinggal berjalan terus ke belakang. Nanti ada bangunan dengan ukuran yang cukup kecil. Meski kecil, namun menariknya ada area smoking dan non smoking. Selain itu disetiap sudut terlihat instagramable dengan segala pernak pernik dekorasi. Jangan heran kalau disana, hampir semuanya sibuk foto sana sini. Namun perlu dicatat, pengunjung tidak diperbolehkan membawa kamera DSLR hanya diperbolehkan dengan kamera HP saja. Dan yang diperbolehkan untuk berfoto foto hanya di bagian cafenya saja, selain itu memang disewakan untuk event dan prewedding. Suasana hommy dan ambiencenya bakalan membuatmu betah berlama lama. Bahkan kamu bakalan kerasa seperti bukan di Surabaya. Menariknya lagi, harga makananya cukup terjangkau. Misalnya saja hot matcha latte dengan gelas cukup besar hanya dibandrol 20k. Rata rata menu disini dibandrol dibawah Rp 50 ribu.",
+      "pictureId": "https://i.ibb.co/jfMz1bS/PSX-20191130-094332-01-1.jpg",
+      "city": "Surabaya",
+      "rating": 4.7
+    },
+    {
+      "id": "Jfyt6elxY29PXgtcyHj",
+      "name": "The Sayan House",
+      "description": "Tempat makan cantik yang berhadapan langsung dengan Sungai Ayung ini cukup terkenal sebagai lokasi untuk menyelenggarakan acara atau resepsi yang bersifat private.Ingin merasakan seperti sedang berada di puncak dunia? Langsung saja berkunjung ke The Sayan House. The Sayan House adalah tempat terbaik untuk menyatu dengan alam. Dari pemandangan hutan, sawah hijau serta air yang mengalir deras di Sungai Ayung semua bisa disaksikan di sini. Nikmatilah makan malam romantis dengan orang terkasih sambil menyaksikan indahnya matahari terbenam di balik bukit. Atau pasang lampu-lampu di atas pohon untuk menciptakan suasana pernikahan bak negeri dongeng. Soal makanan, The Sayan House menyajikan beragam menu kontemporer dan juga hidangan bercitarasa Asia yang pastinya lezat. Cobalah Crispy King Prawn & Avocado Maki juga Salmon Carpaccio mereka! Ada juga menu unik seperti Sushi Babi Guling. Kalau Anda suka mencoba makanan-makanan yang baru, dipastikan tak akan kecewa di sini. ",
+      "pictureId": "https://i.ibb.co/rf42Z3W/2-1-view-via-kensuke-hiruta-740x736.jpg",
+      "city": "Bali",
+      "rating": 4.7
+    },
+    {
+      "id": "3tmdplU4hqSjcBJTYTZ",
+      "name": "Sydwic",
+      "description": "Sydwic merupakan sebuah cafe yang berlokasi di Jalan Cilaki No. 63, Citarum, Bandung. Cafe ini memiliki konsep interior yang terbilang unik dan nampak nyaman serta menawan. Kental dengan nuansa warna hitam, putih, dan juga cokelat, Sydwic banyak dijadikan sebagai tongkrongan untuk bergaya dengan balutan outfit of the day. Menu yang ditawarkan di café ini juga cocok untuk lidah orang Indonesia pada umumnya. Kebanyakan kuliner yang ada adalah masakan khas Nusantara dan Western food. Bagi yang masih belum pernah ke Sydwic, bisa coba menu andalannya, yaitu Spaghetti yang dikombinasikan dengan shrimp dan juga sambal matah. Untuk minuman, Sydwic juga memiliki banyak pilihan menu untuk dipilih. Namun, yang paling populer adalah minuman bernama eskosu yaitu abreviasi dari minuman es kopi susu yang menyegarkan. Seluruh menu di Sydwic memiliki harga yang cukup terjangkau, yakni di kisaran 25 ribu hingga 59 ribu Rupiah Tak perlu bingung mencari waktu untuk bisa nongkrong di cafe ini. Pasalnya, Sydwic mulai buka sejak jam 7 pagi hingga jam 11 malam. Jadi, Anda dapat dengan bebas mencari waktu luang untuk bisa kumpul bersama teman dekat di cafe yang unik ini. ",
+      "pictureId": "https://i.ibb.co/n6F6fJq/2021-05-29.jpg",
+      "city": "Bandung",
+      "rating": 4.5
+    },
+    {
+      "id": "cW9fu8sd0vqN0Yajl9r",
+      "name": "Kampung Laut",
+      "description": "Restoran apung Kampung Laut Semarang lokasinya berada di Puri Maerokoco Tawang Mas, Jalan Anjasmoro Raya, Semarang Barat, Tawangsari, Semarang, Kota Semarang, Jawa Tengah 50144. Perlu waktu sekitar 15-20 menit dari Hotel Novotel yang berada di Jl. Pemuda untuk mencapai Resto Kampung Laut yang berlokasi di Tawang Mas. Restoran Kampung Laut ini memiliki lahan yang luas dan berada di tepi danau. Pada pintu masuk, di dinding kayunya terdapat tulisan aneka menu. Disini, pengunjung tidak akan menemukan bangunan dengan dinding semen, bangunan yang ada didominasi dari bahan kayu. Untuk menikmati makanan dengan nuansa alam, terdapat beberapa anjungan yang menghadap ke danau, dan pondok makan beratap rumbia. Beberapa fasilitas maupun hal yang dapat pengunjung nikmati di Kampung Laut Semarang adalah terdapat jembatan kayu sepanjang sekitar 100 m yang terlihat cukup kokoh, ada mushola, tempat bermain anak serta tempat pemancingan. Kampung Laut sanggup untuk menampung pengunjung dalam jumlah yang banyak untuk berbagai acara. Terdapat meja customer service dengan staf yang siap melayani tamu, juga office equipment yang cukup lengkap dan materi-materi promosi yang tersebar. Kampung Laut dapat melayani reservasi grup dengan jumlah minimum 50 orang dan dapat memesan paket buffet dengan harga khusus, dengan harga mulai dari Rp 55.000,- per orang sampai Rp 110.000,-per orang. Menu tersebut disajikan dengan jenis makanan dan juga jumlah menu hidangan yang disesuaikan dengan harga. Tempat favorit yang biasa dipesan oleh grup ialah meja-meja di pinggir danau, yang menyediakan tempat duduk yang terpisah, sehingga tidak mengganggu dan terganggu dengan tamu-tamu yang lain, juga karena lokasinya lebih menjorok ke danau maka menjadi lebih private. Jam buka restoran ini adalah setiap hari pada jam 11.30 hingga 22.00. Namun pada hari Minggu, restoran ini buka dari jam 10.00 dan tutup di jam 22.30",
+      "pictureId": "https://i.ibb.co/gdrcTcX/03-Kampung-Laut-118.jpg",
+      "city": "Semarang",
+      "rating": 4.4
+    },
+    {
+      "id": "mo4JPL3Aqpg1Wh38QUq",
+      "name": "The Hills Dining",
+      "description": "The Hills Dining Restaurant adalalah salah satu restoran diatas bukit yang sangat cocok untuk dijadikan tempat untuk menikmati senja sambil menyantap aneka hidangan lezat. Dining Restaurant satu ini memiliki menu yang variatif yaitu perpaduan antara makanan western dan Nusantara. Menu makanan dan minuman yang ditawarkan oleh The Hills Semarang mampu membuat siapa saja merasa terhipnotis saking enaknya. Dari sekian banyak menu makanan yang ada di The Hills, kamu harus cobain salah satu signature dish disini yaitu Long Horn. Long Horn adalah hidangan makanan berbentuk Sapi Panggang yang panjangnya mencapai 75 cm.",
+      "pictureId": "https://i.ibb.co/BwjGZGy/2019-06-30.jpg",
+      "city": "Semarang",
+      "rating": 4.4
+    },
+    {
+      "id": "u9IXij5ceCec6ddbVAl",
+      "name": "Kolamkita",
+      "description": "Tak jauh dari pertigaan Patung Barong Desa Kemiren terdapat sebuah restoran keluarga yang juga unik. Kolam Kita Resto memiliki beberapa saung yang dibangun di atas sebuah kolam ikan. Di sini pengunjung bisa menghabiskan waktu menunggu pesanan datang dengan memancing ikan. Nantinya, ikan hasil pancingan bisa dibawa pulang ataupun langsung diolah menjadi hidangan yang lezat. Dengan spesialisasi olahan gurame, resto yang buka pada H+2 Lebaran ini cocok untuk lokasi bersantai keluarga. Kalau mampir kesini, cobalah menu udang bakar. Udang dengan ukuran sedang, dibakar dengan madu. Rasa manis dari madu begitu nikmat bercampur dengan gurih dan manisnya daging udang yang masih fresh. Harga makanan di sini berkisar mulai Rp 4 ribu-Rp 35 ribu. ",
+      "pictureId": "https://i.ibb.co/HqLJjyS/IMG-20170615-170311.jpg",
+      "city": "Banyuwangi",
+      "rating": 4.1
+    },
+    {
+      "id": "SMQwEVTisrVH0CIvBVD",
+      "name": "Hedon Cafe",
+      "description": "Kafe ini sendiri bertempat di depan pom bensin Penataban Banyuwangi. Tema kafe yang mengutamakan ke-eksklusifitasan kaum middle up, benar-benar teraplikasikan di setiap sudut interior kafe Hedon ini. Pada halaman depan kafe, berjejer mobil lamborghini berwarna silver dengan pelat emas yang mewah. Bagian dalam kafe juga terdapat jejeran mobil dengan harga fantastis dan tidak ketinggal motor Harley-Davidson yang megah. Hedon ini terdiri dari 3 lantai, dimana lantai pertama dikhususkan untuk kafe santai, lantai kedua untuk restoran, dan lantai ketiga terdapat aula yang luas sesuai untuk acara meeting kantor ataupun pesta bersama keluarga dan sahabat. Di lantai tiga juga dilengkapi dengan mini panggung untuk live music dan adapula alat-alat gamelan bernuansa emas. Belum cukup sampai disini, kafe dan resto ini juga tersedia halaman belakang yang luas dan dilengkapi dengan gazebo, buat kalian yang ingin mengadakan pesta pernikahan bertema garden party cocok banget disini. Seperti namanya, harga makanan dan minuman di kafe ini dibanderol dengan cukup pricey. Hal ini disebabkan kafe ini juga berkolaborasi dengan brand kopi ternama, Excelso jadi wajar saja jika mereka mematok harga yang cukup tinggi. Sasaran pasar kafe ini juga kaum middle up Banyuwangi dan sekitarnya. Kamu hobi bemain billiard? Kafe ini juga menyediakan tempat billiard.",
+      "pictureId": "https://i.ibb.co/vqdsrx1/2021-09-14.jpg",
+      "city": "Banyuwangi",
+      "rating": 4.6
     }
   ]
 }

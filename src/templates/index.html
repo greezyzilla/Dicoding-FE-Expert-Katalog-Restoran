@@ -1,16 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Restaurant Apps Starter Project</title>
-</head>
-<body>
-<h1>Restaurant Apps Starter Project</h1>
-<p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-<p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-<img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_4.jpg" width="450" alt="">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restologue</title>
+  </head>
+  <body>
+    <button class="skip-to-content" tabindex="0">skip to content</button>
+    <div id="overlay"></div>
+    <header class="header" aria-label="">
+      <div class="drawer">
+        <a class="logo" href="/">Restologue</a>
+        <svg
+          class="drawer-toggle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="1.5rem"
+          height="1.5rem"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+          tabindex="0"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </div>
+      <nav class="drawer-menu">
+        <ul class="nav">
+          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Favorite</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://github.com/greezyzilla/Dicoding-FE-Expert-Katalog-Restoran"
+              class="nav-link"
+            >
+              About Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero"
+        style="
+          background-image: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.7),
+              rgba(0, 0, 0, 0.7)
+            ),
+            url('../images/heros/hero-image_4.jpg');
+        "
+      >
+        <div class="container">
+          <div class="copywriting">
+            <p class="pre-heading">Hello restologuers</p>
+            <h1 class="heading">Life is short, Moment is Longer</h1>
+            <p class="body">
+              Save your time to find the restaurant that can fit your need.
+              Focus on the moment that you want to build, and catch it up!
+            </p>
+          </div>
+          <form action="#pagination" class="discover-form" id="discover-form">
+            <div class="form-control">
+              <label class="label" for="search"> Restaurant Name </label>
+              <input
+                type="text"
+                name="search"
+                class="search"
+                id="search"
+                autocomplete="off"
+                placeholder="What do you looking for?"
+              />
+            </div>
+            <div class="form-control" id="select-city">
+              <label for="select-city" class="label">City</label>
+              <div class="select">
+                <div class="toggle" tabindex="0" id="select-city">
+                  <p>Show All</p>
+                  <div class="icon"></div>
+                </div>
+                <div class="menu">
+                  <div>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="city"
+                      id="city-0"
+                      value="0"
+                      role="listitem"
+                    />
+                    <label class="item" for="city-0" tabindex="0">
+                      Show All
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-control" id="select-rating">
+              <label for="select-rating" class="label">Rating</label>
+              <div class="select">
+                <div class="toggle" id="select-rating" tabindex="0">
+                  <p>Show All</p>
+                  <div class="icon"></div>
+                </div>
+                <div class="menu">
+                  <div>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="rating"
+                      id="rating-0"
+                      value="0"
+                    />
+                    <label class="item" for="rating-0" tabindex="0">
+                      Show All
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="rating"
+                      id="rating-1"
+                      value="1"
+                    />
+                    <label class="item" for="rating-1" tabindex="0">
+                      1 Star or Less
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="rating"
+                      id="rating-2"
+                      value="2"
+                    />
+                    <label class="item" for="rating-2" tabindex="0">
+                      2 Star
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="rating"
+                      id="rating-3"
+                      value="3"
+                    />
+                    <label class="item" for="rating-3" tabindex="0">
+                      3 Star
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      class="radio"
+                      type="radio"
+                      name="rating"
+                      id="rating-4"
+                      value="4"
+                    />
+                    <label class="item" for="rating-4" tabindex="0">
+                      4 Star or More
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="form-submit" aria-label="Discover Restaurants">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5rem"
+                height="1.5rem"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <span class="label"> Discover </span>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="rank">
+        <div class="container">
+          <div class="heading">
+            <h1 class="title">Meets Our Best Restaurants</h1>
+            <p class="subtitle">
+              Here is three of our best restaurant this year
+            </p>
+          </div>
+          <ol class="items"></ol>
+        </div>
+      </section>
+      <section class="content">
+        <div class="skip-to-card"></div>
+        <div class="container">
+          <div class="heading">
+            <h1 class="title">Explore The Restaurants</h1>
+            <p class="subtitle" tabindex="0">
+              Here is the restaurants that may fit your needs
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="aside">
+        <div class="container">
+          <div class="body">
+            <h2 class="title">Interested in this project?</h2>
+            <a href="#" class="action">Support us!</a>
+          </div>
+          <img
+            class="image"
+            src="https://image.freepik.com/free-photo/attractive-enthusiastic-armenian-young-woman-curly-hair-pointing-looking-intrigued-left-show-index-fingers-awesome-blank-space-advertisement-smirking-joyfully-introducing-product-white-background_176420-35016.jpg"
+            alt="Woman photo created by cookie_studio - www.freepik.com"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="sitemap">
+          <h1 class="logo">Restologue</h1>
+          <nav class="navigation">
+            <h2 class="title">Sitemap</h2>
+            <ul>
+              <li>
+                <a href="/" class="item">Home</a>
+              </li>
+              <li>
+                <a href="#" class="item">Favorite</a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/greezyzilla/Dicoding-FE-Expert-Katalog-Restoran"
+                  class="item"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <p class="copyright">Copyright © 2021 - GreezyZilla</p>
+      </div>
+    </footer>
+  </body>
 </html>

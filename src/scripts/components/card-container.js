@@ -17,7 +17,7 @@ class CardContainer extends HTMLElement {
         this.page = page;
         this.render();
         document.querySelector(".content .subtitle").focus();
-        document.querySelector(".skip-to-card").scrollIntoView({block:"start"});
+        document.querySelector("#skip-to-card").scrollIntoView({block:"start"});
       });
       this.pagination.append(paginationItem);
     }

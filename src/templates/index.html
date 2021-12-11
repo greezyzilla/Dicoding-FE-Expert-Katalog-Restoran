@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Restologue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <button class="skip-to-content" tabindex="0">skip to content</button>
+    <a href="#skip-to-card" class="skip-to-content" tabindex="0">
+      skip to content
+    </a>
     <div id="overlay"></div>
     <header class="header" aria-label="">
       <div class="drawer">
         <a class="logo" href="/">Restologue</a>
         <svg
           class="drawer-toggle"
+          aria-label="hamburger menu"
           xmlns="http://www.w3.org/2000/svg"
           width="1.5rem"
           height="1.5rem"
@@ -207,7 +211,7 @@
         </div>
       </section>
       <section class="content">
-        <div class="skip-to-card"></div>
+        <div id="skip-to-card"></div>
         <div class="container">
           <div class="heading">
             <h1 class="title">Explore The Restaurants</h1>

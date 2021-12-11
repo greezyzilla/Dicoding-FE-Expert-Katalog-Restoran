@@ -27,13 +27,6 @@ drawerToggle.addEventListener("keyup",(event)=>{
 });
 
 window.addEventListener("load", () => {
-  const skipToContent = document.querySelector('.skip-to-content');
-  skipToContent.addEventListener('keyup',(event)=>{
-    if(event.keyCode===13) document.querySelector('.search').focus();
-  })
-  skipToContent.focus();
-  skipToContent.scrollIntoView();
-
   const bestItems = restaurants.sort((a,b)=> b.rating - a.rating).slice(0,3);
   const bestParentElement = document.querySelector('.rank .items');
   bestItems.forEach((item,index) => {
@@ -165,7 +158,7 @@ searchForm.addEventListener("submit", (event) => {
 
   restaurantsElement.items = restaurantsFilteredByRating;
   setTimeout(()=>{
-    document.querySelector(".skip-to-card").scrollIntoView({block:"start"});
+    document.querySelector("#skip-to-card").scrollIntoView({block:"start"});
   },50)
   
   document.querySelector(".content .subtitle").focus();

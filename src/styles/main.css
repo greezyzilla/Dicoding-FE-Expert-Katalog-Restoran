@@ -102,6 +102,15 @@ body {
 .skip-to-content {
   position: absolute;
   top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.skip-to-content:focus {
+  top: 0;
 }
 
 .skip-to-card {
@@ -492,6 +501,7 @@ body {
 }
 
 .card .body {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -514,13 +524,14 @@ body {
 
 .card .body .informations .details {
   color: var(--color-black);
-  justify-content: space-between;
+  justify-content: flex-start;
   font-weight: 500;
   display: flex;
+  flex-direction: column;
   width: 60%;
-  align-items: center;
+  align-items: flex-start;
   font-size: var(--text-sm);
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .card .body .informations .details .item {
@@ -944,6 +955,9 @@ body {
 
   .content .cards .card .body .informations .details {
     width: 100%;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 1rem;
   }
 
   .content .cards .paragraph,

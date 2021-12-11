@@ -84,7 +84,7 @@ class CardItem extends HTMLElement {
               </div>
             </div>
             <p class="description">
-              ${this._item.description.slice(0, 80)}...
+              ${this._item.description.slice(0, 75)}...
             </p>
           </div>
         </div>

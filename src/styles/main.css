@@ -646,6 +646,7 @@ body {
 .footer .logo {
   font-size: var(--text-xl);
   font-weight: 600;
+  color: var(--color-black)
 }
 
 .footer .sitemap .navigation .title {

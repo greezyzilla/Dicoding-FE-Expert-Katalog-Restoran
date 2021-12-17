@@ -1,0 +1,27 @@
+.section-favorite {
+    padding: 8rem 1rem;
+    background-color: white;
+    min-height: 500px;
+}
+
+.section-favorite__copywriting {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-favorite__copywriting__heading {
+    font-size: var(--text-xl);
+    color: var(--color-black);
+    font-weight: var(--font-semibold);
+    margin-bottom: 1rem;
+}
+
+.section-favorite__copywriting__sub-heading {
+    font-size: var(--text-base);
+    font-weight: 300;
+    color: var(--color-gray);
+}
+
+.section-favorite__content {
+    position: relative;
+}

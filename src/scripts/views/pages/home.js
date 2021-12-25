@@ -2,7 +2,7 @@ import '../../../styles/home.css';
 import TomSelect from 'tom-select/dist/js/tom-select.base';
 import 'tom-select/dist/css/tom-select.default.css';
 import RestaurantApiSource from '../../data/restaurantapi-source';
-import { createRankItem, createRestaurantList } from '../templates/template-creator';
+import { createRankList, createRestaurantList } from '../templates/template-creator';
 import { io } from '../../utils/header-helper';
 import skipToContentInitiator from '../../utils/skiptocontent-initiator';
 
@@ -71,7 +71,7 @@ const Home = {
             Here is three of our best restaurant this year
           </p>
         </div>
-        <ol class="section-rank__rank-container" id="rankContainer"></ol>
+        <div id="rankContainer"></div>
       </div>
     </section>
     <section class="section-content">
@@ -83,7 +83,7 @@ const Home = {
             Here is the restaurants that may fit your needs
           </p>
         </div>
-        <div class="section-content__content-container" id="contentContainer" ></div>
+        <div id="contentContainer" ></div>
       </div>
     </section>
     <aside class="section-aside">
@@ -110,7 +110,15 @@ const Home = {
       scrollTarget: document.querySelector('#content-anchor'),
     });
 
+    const contentContainer = document.querySelector('#contentContainer');
+    const restaurantList = createRestaurantList([...new Array(20)].map(() => ({ id: '' })));
+    contentContainer.append(restaurantList);
+    const rankContainer = document.querySelector('#rankContainer');
+    const rankList = createRankList([...new Array(3)].map(() => ({ id: '' })));
+    rankContainer.append(rankList);
+
     const { restaurants } = await RestaurantApiSource.list();
+    restaurantList.items = restaurants;
 
     const citiesData = new Array(
       ...new Set(restaurants.map((res) => res.city)),
@@ -118,18 +126,12 @@ const Home = {
     this.tomSelectInitiator({ id: '#select__city', data: citiesData });
     this.tomSelectInitiator({ id: '#select__rating' });
 
-    const rankContainer = document.querySelector('#rankContainer');
-    const bestRestaurants = restaurants.sort((a, b) => b.rating - a.rating).slice(0, 3);
-    bestRestaurants.forEach((bestRestaurant, rankId) => {
-      rankContainer.innerHTML += createRankItem(bestRestaurant, rankId);
-    });
+    rankList.items = restaurants
+      .sort((a, b) => b.rating - a.rating)
+      .slice(0, 3)
+      .map((restaurant, rankId) => ({ ...restaurant, rankId: rankId + 1 }));
 
-    const contentContainer = document.querySelector('#contentContainer');
-    const restaurantContainer = createRestaurantList(restaurants);
-    contentContainer.append(restaurantContainer);
-
-    const discoverForm = document.querySelector('#discover-form');
-    this.formHandler({ form: discoverForm, restaurants, restaurantContainer });
+    this.formHandler({ form: document.querySelector('#discover-form'), restaurants, restaurantList });
   },
 
   tomSelectInitiator(selectObj) {
@@ -143,7 +145,7 @@ const Home = {
   },
 
   formHandler(formObj) {
-    const { form, restaurants, restaurantContainer } = formObj;
+    const { form, restaurants, restaurantList } = formObj;
     form.addEventListener('submit', (event) => {
       event.preventDefault();
 
@@ -157,7 +159,7 @@ const Home = {
       const restaurantByCity = this.filterByCity(restaurantByName, filter.city);
       const restaurantByRating = this.filterByRating(restaurantByCity, filter.rating);
 
-      restaurantContainer.items = restaurantByRating;
+      restaurantList.items = restaurantByRating;
       document.querySelector('#content-anchor').scrollIntoView();
     });
   },

@@ -30,9 +30,12 @@ const Favorite = {
       scrollTarget: document.querySelector('#content-anchor'),
     });
 
-    const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
     const favoriteContainer = document.querySelector('#favoriteContainer');
-    favoriteContainer.append(createRestaurantList(restaurants));
+    const favoriteList = createRestaurantList([...new Array(3)].map(() => ({ id: '' })));
+    favoriteContainer.append(favoriteList);
+
+    const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
+    favoriteList.items = restaurants;
   },
 };
 

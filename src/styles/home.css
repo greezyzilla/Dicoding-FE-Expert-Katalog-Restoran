@@ -194,7 +194,7 @@
   color: var(--color-gray);
 }
 
-.section-rank__rank-container {
+.rank-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,20 +214,7 @@
   height: 15.8rem;
 }
 
-.rank-item:nth-child(1) div {
-  background-image: url('https://i.ibb.co/YQBttXB/gold.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.rank-item:nth-child(2) div {
-  background-image: url('https://i.ibb.co/s1C1b7D/silver.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.rank-item:nth-child(3) div {
-  background-image: url('https://i.ibb.co/q07BqhQ/bronze.png');
+.rank-item div {
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -369,7 +356,7 @@
     gap: 2.3rem;
   }
 
-  .section-rank__rank-container {
+  .rank-container {
     justify-content: center;
     flex-direction: row;
     align-items: flex-end;

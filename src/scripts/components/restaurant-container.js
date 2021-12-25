@@ -3,8 +3,12 @@ import './restaurant-item';
 class RestaurantContainer extends HTMLElement {
   set items(restaurants) {
     this.restaurants = restaurants;
-    this.page = 0;
+    this.paginationInit();
+    this.render();
+  }
 
+  paginationInit() {
+    this.page = 0;
     this.pagination = document.createElement('nav');
     this.pagination.setAttribute('id', 'pagination');
     this.pagination.setAttribute('class', 'pagination-container');
@@ -21,8 +25,6 @@ class RestaurantContainer extends HTMLElement {
       });
       this.pagination.append(paginationItem);
     }
-
-    this.render();
   }
 
   render() {

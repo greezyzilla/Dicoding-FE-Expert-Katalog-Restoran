@@ -87,6 +87,32 @@ body {
   }
 }
 
+.skeleton {
+  opacity: .7;
+  animation: skeleton-loading 1s linear infinite alternate;
+  width: 100%;
+}
+
+.card-description-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card-description-skeleton .skeleton {
+  height: 0.812rem;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
 .skip-to-content {
   position: absolute;
   top: -100px;

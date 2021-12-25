@@ -3,15 +3,14 @@ import '../../components/restaurant-container';
 import '../../components/restaurant-item';
 import '../../components/favorite-button';
 import '../../components/review-list';
+import '../../components/rank-container';
+import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
 
-const createRankItem = (restaurant, rankId) => `
-    <li class="rank-item" aria-label="${restaurant.name} best number ${rankId}">
-        <div>
-            <image src="${CONFIG.BASE_IMAGE_URL_SM + restaurant.pictureId}" class="image" alt="${restaurant.name}" />
-        </div>
-        <p>${restaurant.name}</p>
-    </li>
-`;
+const createRankList = (restaurants) => {
+  const rankContainer = document.createElement('rank-container');
+  rankContainer.items = restaurants;
+  return rankContainer;
+};
 
 const createRestaurantList = (restaurants) => {
   const restaurantContainer = document.createElement('restaurant-container');
@@ -80,7 +79,7 @@ const createRestaurantDetail = (restaurant) => {
 
   const buttonContainer = restaurantContainer.querySelector('#buttonContainer');
   const favoriteButton = document.createElement('favorite-button');
-  favoriteButton.item = restaurant;
+  favoriteButton.item = { restaurant, FavoriteRestaurantIdb };
   buttonContainer.append(favoriteButton);
 
   return restaurantContainer;
@@ -93,5 +92,5 @@ const createReviewList = (reviews) => {
 };
 
 export {
-  createRankItem, createRestaurantList, createRestaurantDetail, createReviewList,
+  createRankList, createRestaurantList, createRestaurantDetail, createReviewList,
 };

@@ -3,7 +3,8 @@ import CONFIG from '../globals/config';
 class RestaurantItem extends HTMLElement {
   set item(restaurant) {
     this.restaurant = restaurant;
-    this.render();
+    if (this.restaurant.id) this.render();
+    else this.renderSkeleton();
   }
 
   render() {
@@ -11,10 +12,10 @@ class RestaurantItem extends HTMLElement {
     this.setAttribute('class', 'restaurant-item');
     this.ariaLabel = this.restaurant.name;
     this.innerHTML = `
-      <img class="restaurant-item__image" src="${CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId}" alt="${this.restaurant.name}" />
+      <img class="restaurant-item__image " src="${this.restaurant.pictureId ? CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId : 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='}" alt="${this.restaurant.name}" />
       <div class="restaurant-item__body">
         <div class="restaurant-item__body__informations">
-          <h2 class="restaurant-item__body__informations__title">${this.restaurant.name}</h2>
+          <h2 class="restaurant-item__body__informations__title ">${this.restaurant.name}</h2>
           <div class="restaurant-item__body__informations__details">
             <div class="restaurant-item__body__informations__details__item">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
@@ -37,6 +38,30 @@ class RestaurantItem extends HTMLElement {
           <a href="#/detail/${this.restaurant.id}" class="restaurant-item__body__informations__details__button" aria-label="name ${this.restaurant.name}, location ${this.restaurant.city}, rating ${this.restaurant.rating} Read More"> Read More </a>
       </div>
     `;
+  }
+
+  renderSkeleton() {
+    this.setAttribute('class', 'restaurant-item');
+    this.innerHTML = `
+        <img class="restaurant-item__image skeleton" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="loading" />
+        <div class="restaurant-item__body">
+          <div class="restaurant-item__body__informations">
+            <h2 class="restaurant-item__body__informations__title skeleton">&nbsp;</h2>
+            <div class="restaurant-item__body__informations__details">
+              <div class="restaurant-item__body__informations__details__item skeleton" style="height:1rem">&nbsp;</div>
+              <div class="restaurant-item__body__informations__details__item skeleton" style="height:1rem">&nbsp;</div>
+            </div>
+            <div class="restaurant-item__body__informations__details__description">
+                <div class="card-description-skeleton">
+                  <div class="skeleton"></div>
+                  <div class="skeleton"></div>
+                  <div class="skeleton"></div>
+                </div>
+            </div>
+            </div>
+            <button class="restaurant-item__body__informations__details__button skeleton" aria-label="loading" tabindex="-1">&nbsp;</button>
+        </div>
+      `;
   }
 }
 

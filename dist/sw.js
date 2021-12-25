@@ -2,6 +2,9 @@ var serviceWorkerOption = {
   "assets": [
     "/bundle.js",
     "/manifest.webmanifest",
+    "/images/badges/rank-1.png",
+    "/images/badges/rank-2.png",
+    "/images/badges/rank-3.png",
     "/images/heros/hero-image_4.jpg",
     "/images/icons/favicon.ico",
     "/images/icons/icon-192x192.png",

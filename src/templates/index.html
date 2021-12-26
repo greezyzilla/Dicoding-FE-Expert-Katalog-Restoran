@@ -20,18 +20,31 @@
       type="image/x-icon"
     />
     <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Restologue</title>
   </head>
-  <body class="padding:0; margin:0">
-    <button class="skip-to-content">skip to content</button>
-    <header class="header" aria-label="">
+  <body>
+    <main id="content">
+      <section class="section-loading">
+        <div class="section-loading__spinner"></div>
+      </section>
+    </main>
+    <header class="header" aria-label="" class="padding:0; margin:0">
+      <button class="skip-to-content">skip to content</button>
       <div class="header__menu">
         <a class="header__menu__logo" href="#/">Restologue</a>
         <button id="hamburger">☰</button>
       </div>
       <nav class="header__dropdown">
         <ul class="header__dropdown__nav" id="navDrawer">
-          <li class="header__dropdown__item"><a href="#/">Home</a></li>
+          <li class="header__dropdown__item">
+            <a href="#/">Home</a>
+          </li>
           <li class="header__dropdown__item">
             <a href="#/favorite">Favorite</a>
           </li>
@@ -45,10 +58,5 @@
         </ul>
       </nav>
     </header>
-    <main id="content">
-      <section class="section-loading">
-        <div class="section-loading__spinner"></div>
-      </section>
-    </main>
   </body>
 </html>

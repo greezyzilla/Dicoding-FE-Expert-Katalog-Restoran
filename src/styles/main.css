@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 :root {
   font-size: 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   --text-2xs: 0.625rem;
   --text-xs: 0.75rem;
   --text-sm: 0.812rem;
@@ -35,11 +33,13 @@ option {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
   background: var(--color-black);
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -114,6 +114,7 @@ html {
   width: 100vw;
   z-index: 100;
   top: 0;
+  box-sizing: border-box;
 }
 
 @keyframes hiding {
@@ -157,6 +158,9 @@ html {
   font-weight: var(--font-semibold);
   color: white;
   text-decoration: none;
+  box-sizing: border-box;
+  width: 170px;
+  height: 50px;
 }
 
 .header__menu #hamburger {
@@ -166,6 +170,7 @@ html {
   background: none;
   cursor: pointer;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .header__menu #hamburger:focus {
@@ -197,6 +202,7 @@ html {
   flex-direction: column;
   width: inherit;
   margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .header__dropdown__item {
@@ -205,6 +211,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .header__dropdown__item:hover {
@@ -217,6 +224,7 @@ html {
   color: white;
   width: inherit;
   height: inherit;
+  box-sizing: border-box;
 }
 
 .container {
@@ -442,7 +450,14 @@ html {
   .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .header__menu {
+    animation: none;
+    background: none;
+    width: fit-content;
   }
 
   .header__menu #hamburger {
@@ -451,6 +466,8 @@ html {
 
   .header__dropdown {
     display: flex;
+    justify-content: flex-end;
+    width: fit-content;
   }
 
   .header__dropdown__nav {
@@ -458,11 +475,13 @@ html {
     margin-bottom: 0;
     gap: 1rem;
     margin-right: 1rem;
+    width: fit-content;
   }
 
   .header__dropdown__item {
-    height: 100%;
-    width: auto;
+    height: 45px;
+    width: 120px;
+    box-sizing: border-box;
   }
 
   .header__dropdown__item:hover {
@@ -472,7 +491,10 @@ html {
   .header__dropdown__item a {
     padding-left: 1rem;
     padding-right: 1rem;
+    width: inherit;
+    height: inherit;
     font-size: var(--text-sm);
+    box-sizing: border-box;
   }
 
   .header__dropdown__item a:hover {

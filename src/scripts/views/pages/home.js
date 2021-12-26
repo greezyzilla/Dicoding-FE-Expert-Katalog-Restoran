@@ -100,7 +100,7 @@ const Home = {
             Support us!
           </a>
         </div>
-        <img
+        <img width="30%" height="100%"
           class="section-aside__image" src="https://image.freepik.com/free-photo/attractive-enthusiastic-armenian-young-woman-curly-hair-pointing-looking-intrigued-left-show-index-fingers-awesome-blank-space-advertisement-smirking-joyfully-introducing-product-white-background_176420-35016.jpg"
           alt="Woman photo created by cookie_studio - www.freepik.com" />
       </div>

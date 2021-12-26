@@ -25,6 +25,7 @@ const Detail = {
     const detailContainer = document.querySelector('#detailContainer');
     const restaurantDetail = createRestaurantDetail({ restaurant: { id: '' }, FavoriteRestaurantIdb: null });
     detailContainer.append(restaurantDetail);
+
     const { restaurant } = await RestaurantApiSource.detail(url.id);
 
     restaurantDetail.item = { restaurant, FavoriteRestaurantIdb };

@@ -1,7 +1,6 @@
 import '../../components/restaurant-container';
 import '../../components/restaurant-item';
 import '../../components/favorite-button';
-import '../../components/review-list';
 import '../../components/rank-container';
 import '../../components/restaurant-detail';
 import lazySizes from 'lazysizes/lazysizes.min';

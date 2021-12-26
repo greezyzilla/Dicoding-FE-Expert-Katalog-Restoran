@@ -13,8 +13,8 @@ const Home = {
       <section class="section-hero" id="hero">
       <div class="section-hero__background">
         <picture class="section-hero__background__picture">
-          <source type="image/webp" data-srcset="./images/heros/hero-image_4.webp">
-          <source type="image/webp" data-srcset="./images/heros/hero-image_4.webp">
+          <source media="(max-width:700px)" type="image/webp" data-srcset="./images/heros/hero-image_4.webp">
+          <source media="(min-width:700px)" type="image/jpeg" data-srcset="./images/heros/hero-image_4.jpg">
           <img class="section-hero__background__picture lazyload" data-src="./images/heros/hero-image_4.jpg" alt="">
         </picture>
       </div>
@@ -101,7 +101,7 @@ const Home = {
           </a>
         </div>
         <img width="30%" height="100%"
-          class="section-aside__image" src="https://image.freepik.com/free-photo/attractive-enthusiastic-armenian-young-woman-curly-hair-pointing-looking-intrigued-left-show-index-fingers-awesome-blank-space-advertisement-smirking-joyfully-introducing-product-white-background_176420-35016.jpg"
+          class="section-aside__image lazyload" data-src="https://image.freepik.com/free-photo/attractive-enthusiastic-armenian-young-woman-curly-hair-pointing-looking-intrigued-left-show-index-fingers-awesome-blank-space-advertisement-smirking-joyfully-introducing-product-white-background_176420-35016.jpg"
           alt="Woman photo created by cookie_studio - www.freepik.com" />
       </div>
     </aside>
@@ -119,12 +119,12 @@ const Home = {
     const contentContainer = document.querySelector('#contentContainer');
     const restaurantList = createRestaurantList([...new Array(20)].map(() => ({ id: '' })));
     contentContainer.append(restaurantList);
+
     const rankContainer = document.querySelector('#rankContainer');
     const rankList = createRankList([...new Array(3)].map(() => ({ id: '' })));
     rankContainer.append(rankList);
 
     const { restaurants } = await RestaurantApiSource.list();
-    restaurantList.items = restaurants;
 
     const citiesData = new Array(
       ...new Set(restaurants.map((res) => res.city)),
@@ -132,6 +132,7 @@ const Home = {
     this.tomSelectInitiator({ id: '#select__city', data: citiesData });
     this.tomSelectInitiator({ id: '#select__rating' });
 
+    restaurantList.items = restaurants;
     rankList.items = restaurants
       .sort((a, b) => b.rating - a.rating)
       .slice(0, 3)

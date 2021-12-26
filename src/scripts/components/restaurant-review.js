@@ -28,11 +28,11 @@ class RestaurantReview extends HTMLElement {
             <form class="section-detail__post-review__form" id="post-review">
                     <div class="section-detail__post-review__form__control">
                         <label for="review-name">Name</label>
-                        <input type="text" id="review-name" required>
+                        <input type="text" id="review-name">
                     </div>
                     <div class="section-detail__post-review__form__control">
                         <label for="review-body">Review</label>
-                        <input type="text" id="review-body" required>
+                        <input type="text" id="review-body">
                     </div>
                     <button class="section-detail__post-review__form__submit">Make Review!</button>
             </form>
@@ -80,9 +80,27 @@ class RestaurantReview extends HTMLElement {
       event.preventDefault();
       const reviewData = {
         id: restaurantId,
-        name: event.target[0].value,
-        review: event.target[1].value,
+        name: event.target[0].value.trim(),
+        review: event.target[1].value.trim(),
       };
+
+      if (!reviewData.name) {
+        Toast.fire({
+          icon: 'error',
+          title: 'Review Failed',
+          text: 'Please fill the name field first',
+        });
+        return;
+      }
+
+      if (!reviewData.review) {
+        Toast.fire({
+          icon: 'error',
+          title: 'Review Failed',
+          text: 'Please fill the review field first',
+        });
+        return;
+      }
 
       try {
         const { customerReviews } = await RestaurantApiSource.addReview(reviewData);

@@ -7,6 +7,13 @@ describe('Liking A Restaurant', () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
   });
 
+  afterEach(async () => {
+    const restaurants = await FavoriteRestaurantIdb.getAllRestaurants();
+    restaurants.forEach(async (restaurant) => {
+      await FavoriteRestaurantIdb.deleteRestaurant(restaurant.id);
+    });
+  });
+
   it('should show the favorite button when the restaurant has not been liked before', async () => {
     await createLikeButtonPresenterWithRestaurant({ id: 1 });
     expect(document.querySelector('#likeButton')).toBeTruthy();

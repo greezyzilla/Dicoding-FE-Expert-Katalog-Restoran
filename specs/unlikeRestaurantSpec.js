@@ -12,12 +12,12 @@ describe('Unliking A Restaurant', () => {
     await FavoriteRestaurantIdb.deleteRestaurant(1);
   });
 
-  it('should display unlike widget when the restaurant has been liked', async () => {
+  it('should display unlike button when the restaurant has been liked', async () => {
     await createLikeButtonPresenterWithRestaurant({ id: 1 });
     expect(document.querySelector('#likedButton')).toBeTruthy();
   });
 
-  it('should not display like widget when the restaurant has been liked', async () => {
+  it('should not display like button when the restaurant has been liked', async () => {
     await createLikeButtonPresenterWithRestaurant({ id: 1 });
     expect(document.querySelector('#likeButton')).toBeFalsy();
   });

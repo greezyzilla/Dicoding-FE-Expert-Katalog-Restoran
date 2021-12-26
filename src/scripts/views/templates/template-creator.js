@@ -1,10 +1,15 @@
-import CONFIG from '../../globals/config';
 import '../../components/restaurant-container';
 import '../../components/restaurant-item';
 import '../../components/favorite-button';
 import '../../components/review-list';
 import '../../components/rank-container';
+import lazySizes from 'lazysizes/lazysizes.min';
 import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
+
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import CONFIG from '../../globals/config';
+
+lazySizes.cfg.lazyClass = 'lazy';
 
 const createRankList = (restaurants) => {
   const rankContainer = document.createElement('rank-container');
@@ -44,7 +49,11 @@ const createRestaurantDetail = (restaurant) => {
                 </div>
             </div>
             <div class="restaurant-detail__body">
-                <img class="restaurant-detail__body__image" src="${CONFIG.BASE_IMAGE_URL_LG + restaurant.pictureId}">
+                <picture class="restaurant-detail__body__image">
+                    <source media="(max-width:600px)" data-srcset="${CONFIG.BASE_IMAGE_URL_SM + restaurant.pictureId}"></source>
+                    <source media="(min-width:600px)" data-srcset="${CONFIG.BASE_IMAGE_URL_MD + restaurant.pictureId}"></source>
+                    <img class="restaurant-detail__body__image lazyload" data-src="${CONFIG.BASE_IMAGE_URL_LG + restaurant.pictureId}" alt="${restaurant.name}">
+                </picture>
                 <div class="restaurant-detail__body__menu">
                     <div class="restaurant-detail__body__menu__item">
                         <h2 class="restaurant-detail__body__menu__item__label">Foods (${restaurant.menus.foods.length})</h2>

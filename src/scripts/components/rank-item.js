@@ -1,4 +1,8 @@
+import lazySizes from 'lazysizes/lazysizes.min';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import CONFIG from '../globals/config';
+
+lazySizes.cfg.lazyClass = 'lazy';
 
 class RankItem extends HTMLElement {
   set item(restaurant) {
@@ -11,8 +15,16 @@ class RankItem extends HTMLElement {
     this.setAttribute('class', 'rank-item');
     this.ariaLabel = `${this.restaurant.name} best number ${this.restaurant.rankId}`;
     this.innerHTML = `
-            <div style="background-image: url('./images/badges/rank-${this.restaurant.rankId}.png')">
-                <image src="${CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId}" class="image" alt="${this.restaurant.name}" />
+            <div>
+                <picture class="background">
+                    <source type="image/webp" data-srcset="./images/badges/rank-${this.restaurant.rankId}.webp"></source>
+                    <source type="image/png" data-srcset="./images/badges/rank-${this.restaurant.rankId}.png"></source>
+                    <img class="background lazyload" data-src="./images/badges/rank-${this.restaurant.rankId}.png" alt="">
+                </picture>
+                <picture class="image lazyload">
+                    <source data-srcset="${CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId}"></source>
+                    <img class="image lazyload" data-src="${CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId}" alt="${this.restaurant.name}">
+                </picture>
             </div>
             <p>${this.restaurant.name}</p>
         `;

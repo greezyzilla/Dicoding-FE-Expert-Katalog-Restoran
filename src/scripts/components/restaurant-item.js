@@ -1,4 +1,8 @@
+import lazySizes from 'lazysizes/lazysizes.min';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import CONFIG from '../globals/config';
+
+lazySizes.cfg.lazyClass = 'lazy';
 
 class RestaurantItem extends HTMLElement {
   set item(restaurant) {
@@ -12,7 +16,11 @@ class RestaurantItem extends HTMLElement {
     this.setAttribute('class', 'restaurant-item');
     this.ariaLabel = this.restaurant.name;
     this.innerHTML = `
-      <img class="restaurant-item__image " src="${this.restaurant.pictureId ? CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId : 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=='}" alt="${this.restaurant.name}" />
+      <picture class="restaurant-item__image">
+          <source media="(max-width:700px)" data-srcset="${CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId}"></source>
+          <source media="(min-width:700px)" data-srcset="${CONFIG.BASE_IMAGE_URL_MD + this.restaurant.pictureId}"></source>
+          <img class="restaurant-item__image lazyload" width="100%" height="100%" data-src="${CONFIG.BASE_IMAGE_URL_SM + this.restaurant.pictureId}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="${this.restaurant.name}">
+      </picture>
       <div class="restaurant-item__body">
         <div class="restaurant-item__body__informations">
           <h2 class="restaurant-item__body__informations__title ">${this.restaurant.name}</h2>

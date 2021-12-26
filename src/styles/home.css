@@ -2,14 +2,34 @@
   position: relative;
   display: flex;
   width: 100%;
+  height: 950px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding: 10rem 0 5rem 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   box-sizing: border-box;
+}
+
+.section-hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  overflow-x: hidden;
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.section-hero__background__picture {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  z-index: -10;
+  object-fit: cover;
+}
+
+.section-hero .container {
+  z-index: 10;
 }
 
 .section-hero__copywriting {
@@ -207,25 +227,33 @@
   gap: 1rem;
   align-items: center;
   padding-top: .72rem;
+  position: relative;
 }
 
 .rank-item div {
   width: 12.63rem;
-  height: 15.8rem;
+  height: 15.7875rem;
 }
 
-.rank-item div {
+.rank-item div .background {
+  position: absolute;
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.rank-item div .image {
-  width: 81.7%;
-  height: 65.3%;
+.rank-item .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10.8rem;
+  height: 10.8rem;
   object-fit: cover;
   border-radius: 50%;
-  background-color: #14a5ff;
-  margin: 8.3%;
+  margin: .72rem .47rem;
+  z-index: 10;
 }
 
 .rank-item .title {
@@ -299,6 +327,10 @@
 }
 
 @media screen and (min-width:700px) {
+  .section-hero {
+    height: 600px;
+  }
+
   .section-hero__form {
     flex-direction: row;
     border-radius: 100px;
@@ -368,6 +400,12 @@
     height: 10rem;
   }
 
+  .rank-item .image {
+    width: 6.7rem;
+    height: 6.7rem;
+    margin: .62rem .35rem;
+  }
+
   .rank-item:nth-child(1) {
     order: 1;
     transform: scale(1.3) translate(0, -11%);
@@ -403,7 +441,7 @@
 
 @media screen and (min-width:1000px) {
   .section-hero {
-    height: 90vh;
+    height: 850px;
     justify-content: center;
     margin-bottom: 0;
   }
@@ -413,4 +451,9 @@
     height: 12.5rem;
   }
 
+  .rank-item .image {
+    width: 8.4rem;
+    height: 8.4rem;
+    margin: .66rem .4rem;
+  }
 }

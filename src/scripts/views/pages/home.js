@@ -1,5 +1,5 @@
 import '../../../styles/home.css';
-import TomSelect from 'tom-select/dist/js/tom-select.base';
+import TomSelect from 'tom-select/dist/js/tom-select.base.min';
 import 'tom-select/dist/css/tom-select.default.css';
 import RestaurantApiSource from '../../data/restaurantapi-source';
 import { createRankList, createRestaurantList } from '../templates/template-creator';
@@ -10,8 +10,14 @@ const Home = {
   async render() {
     return `
       <div id="io-anchor"></div>
-      <section class="section-hero" id="hero"
-      style="background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/heros/hero-image_4.jpg');">
+      <section class="section-hero" id="hero">
+      <div class="section-hero__background">
+        <picture class="section-hero__background__picture">
+          <source type="image/webp" data-srcset="./images/heros/hero-image_4.webp">
+          <source type="image/webp" data-srcset="./images/heros/hero-image_4.webp">
+          <img class="section-hero__background__picture lazyload" data-src="./images/heros/hero-image_4.jpg" alt="">
+        </picture>
+      </div>
       <div class="container">
         <div class="section-hero__copywriting">
           <p class="section-hero__copywriting__pre-heading">

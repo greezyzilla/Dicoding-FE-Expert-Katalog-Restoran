@@ -5,8 +5,8 @@
   height: 950px;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  padding: 10rem 0 5rem 0;
+  justify-content: flex-start;
+  padding-top: 10rem;
   box-sizing: border-box;
 }
 
@@ -30,6 +30,7 @@
 
 .section-hero .container {
   z-index: 10;
+  height: auto;
 }
 
 .section-hero__copywriting {
@@ -62,7 +63,9 @@
 
 .section-hero__form {
   display: flex;
+  justify-content: flex-start;
   width: 95%;
+  height: auto;
   flex-direction: column;
   background-color: white;
   padding: 2rem 1.8rem;
@@ -92,6 +95,7 @@
   border: none;
   border-bottom: 1px solid var(--color-gray);
   padding: .5rem .8rem;
+  box-sizing: border-box;
 }
 
 .section-hero__form__control__input::placeholder {
@@ -171,6 +175,7 @@
   cursor: pointer;
   color: white;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .section-hero__form__submit:focus {
@@ -185,12 +190,12 @@
 .section-rank {
   background-color: white;
   padding: 4rem 1rem 0 1rem;
+  box-sizing: border-box;
 }
 
 .section-rank .container {
   display: flex;
   flex-direction: column;
-  gap: 0rem;
 }
 
 .section-rank__copywriting,
@@ -228,6 +233,7 @@
   align-items: center;
   padding-top: .72rem;
   position: relative;
+  box-sizing: border-box;
 }
 
 .rank-item div {
@@ -270,6 +276,7 @@
   background-color: white;
   padding: 4rem 1rem;
   position: relative;
+  box-sizing: border-box;
 }
 
 .section-content__anchor {
@@ -282,6 +289,7 @@
   height: 180px;
   background-color: white;
   padding: 0 1rem 2rem 1rem;
+  box-sizing: border-box;
 }
 
 .section-aside .container {
@@ -290,6 +298,7 @@
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .section-aside__promotion-container {
@@ -316,6 +325,7 @@
   padding: 0.5rem 3rem;
   font-weight: 500;
   opacity: 0.9;
+  box-sizing: border-box;
 }
 
 .section-aside__action:hover {

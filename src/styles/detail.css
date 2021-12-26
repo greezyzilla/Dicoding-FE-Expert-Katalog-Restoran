@@ -155,6 +155,11 @@
   font-weight: var(--font-semibold);
 }
 
+.section-detail__post-review__label,
+.restaurant-review__label {
+  margin-top: 1rem;
+}
+
 .restaurant-detail__body__menu__item__list {
   display: flex;
   gap: 1rem;
@@ -235,6 +240,7 @@
 .restaurant-review__item p {
   color: var(--color-black);
   line-height: 140%;
+  word-wrap: break-word;
   font-weight: var(--font-light);
 }
 

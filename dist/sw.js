@@ -5,6 +5,7 @@ var serviceWorkerOption = {
     "/defaultVendors~main~c4140c7e.bundle.js",
     "/defaultVendors~main~d939e436.bundle.js",
     "/defaultVendors~main~ec8c427e.bundle.js",
+    "/main~1508fa62.bundle.js",
     "/main~25018730.bundle.js",
     "/main~3ed61465.bundle.js",
     "/main~73c02ba8.bundle.js",

@@ -42,12 +42,6 @@ html {
   background: var(--color-black);
 }
 
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -64,27 +58,6 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: lightgray;
-}
-
-
-@keyframes showing {
-  from {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  to {
-    background-color: rgba(0, 0, 0, 1);
-  }
-}
-
-@keyframes hiding {
-  from {
-    background-color: rgba(0, 0, 0, 1);
-  }
-
-  to {
-    background-color: rgba(0, 0, 0, 0);
-  }
 }
 
 .skeleton {
@@ -105,11 +78,11 @@ body {
 
 @keyframes skeleton-loading {
   0% {
-    background-color: hsl(200, 20%, 70%);
+    background: hsl(200, 20%, 70%);
   }
 
   100% {
-    background-color: hsl(200, 20%, 95%);
+    background: hsl(200, 20%, 95%);
   }
 }
 
@@ -138,9 +111,19 @@ body {
   animation: hiding 500ms;
   flex-direction: column;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 100;
   top: 0;
+}
+
+@keyframes hiding {
+  from {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0);
+  }
 }
 
 .header.overlaying,
@@ -149,13 +132,23 @@ body {
   animation: showing 300ms;
 }
 
+@keyframes showing {
+  from {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
 .header__menu {
+  padding: 1.2rem 2rem;
   justify-content: space-between;
+  width: 100%;
   box-sizing: border-box;
   align-items: center;
-  padding: 1.2rem 2rem;
   display: flex;
-  width: 100%;
   background-color: inherit;
 }
 
@@ -233,7 +226,7 @@ body {
   box-sizing: border-box;
 }
 
-.section-loading {
+/* .section-loading {
   background-color: white;
   display: flex;
   align-items: center;
@@ -246,16 +239,16 @@ body {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-}
+} */
 
-.section-loading__spinner {
+/* .section-loading__spinner {
   border: 16px solid #f3f3f3;
   border-top: 16px solid var(--color-primary);
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
   animation: spin 2s linear infinite;
-}
+} */
 
 @keyframes spin {
   0% {
@@ -518,7 +511,6 @@ body {
   .restaurant-item__body__informations__details {
     width: 100%;
     flex-direction: row;
-    /* justify-content: space-between; */
     gap: 1rem;
   }
 

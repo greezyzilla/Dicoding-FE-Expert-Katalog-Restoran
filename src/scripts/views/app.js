@@ -1,6 +1,7 @@
 import DrawerInitiator from '../utils/drawer-initiator';
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
+import { createFooter } from './templates/template-creator';
 
 class App {
   constructor({ button, drawer, content }) {
@@ -21,8 +22,23 @@ class App {
   async renderPage() {
     const url = UrlParser.parseActiveUrlWithCombiner();
     const page = routes[url];
+
+    await this.loading();
     this.content.innerHTML = await page.render();
     await page.afterRender();
+    await this.renderFooter();
+  }
+
+  async loading() {
+    this.content.innerHTML = `
+    <section class="section-loading">
+      <div class="section-loading__spinner"></div>
+    </section>
+  `;
+  }
+
+  async renderFooter() {
+    this.content.append(createFooter());
   }
 }
 

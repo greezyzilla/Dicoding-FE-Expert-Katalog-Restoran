@@ -13,9 +13,11 @@ const Home = {
       <section class="section-hero" id="hero">
       <div class="section-hero__background">
         <picture class="section-hero__background__picture">
-          <source media="(max-width:700px)" type="image/webp" data-srcset="./images/heros/hero-image_4.webp">
-          <source media="(min-width:700px)" type="image/jpeg" data-srcset="./images/heros/hero-image_4.jpg">
-          <img class="section-hero__background__picture lazyload" data-src="./images/heros/hero-image_4.jpg" alt="">
+          <source media="(max-width:700px)" type="image/webp" data-srcset="./images/heros/hero-image_4-small.webp">
+          <source media="(max-width:700px)" type="image/jpeg" data-srcset="./images/heros/hero-image_4-small.jpg">
+          <source media="(min-width:700px)" type="image/webp" data-srcset="./images/heros/hero-image_4-large.webp">
+          <source media="(min-width:700px)" type="image/jpeg" data-srcset="./images/heros/hero-image_4-large.jpg">
+          <img class="section-hero__background__picture lazyload" data-src="./images/heros/hero-image_4-large.jpg" alt="">
         </picture>
       </div>
       <div class="container">
